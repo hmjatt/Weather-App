@@ -6,3 +6,8 @@ html {
 	/* font-family: 'Source Sans Pro', sans-serif; */
 	background-color: var(--clr-primary);
 }
+
+a {
+	text-decoration: none;
+	color: black;
+}

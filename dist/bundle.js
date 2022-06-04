@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\r\n\t--clr-primary: rgb(41, 145, 255);\r\n}\r\n\r\nhtml {\r\n\t/* font-family: 'Source Sans Pro', sans-serif; */\r\n\tbackground-color: var(--clr-primary);\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/style/styles.css"],"names":[],"mappings":"AAAA;CACC,gCAAgC;AACjC;;AAEA;CACC,gDAAgD;CAChD,oCAAoC;AACrC","sourcesContent":[":root {\r\n\t--clr-primary: rgb(41, 145, 255);\r\n}\r\n\r\nhtml {\r\n\t/* font-family: 'Source Sans Pro', sans-serif; */\r\n\tbackground-color: var(--clr-primary);\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\r\n\t--clr-primary: rgb(41, 145, 255);\r\n}\r\n\r\nhtml {\r\n\t/* font-family: 'Source Sans Pro', sans-serif; */\r\n\tbackground-color: var(--clr-primary);\r\n}\r\n\r\na {\r\n\ttext-decoration: none;\r\n\tcolor: black;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/style/styles.css"],"names":[],"mappings":"AAAA;CACC,gCAAgC;AACjC;;AAEA;CACC,gDAAgD;CAChD,oCAAoC;AACrC;;AAEA;CACC,qBAAqB;CACrB,YAAY;AACb","sourcesContent":[":root {\r\n\t--clr-primary: rgb(41, 145, 255);\r\n}\r\n\r\nhtml {\r\n\t/* font-family: 'Source Sans Pro', sans-serif; */\r\n\tbackground-color: var(--clr-primary);\r\n}\r\n\r\na {\r\n\ttext-decoration: none;\r\n\tcolor: black;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
