@@ -27,6 +27,7 @@ An Application that let's you search weather for a specific location and toggles
 	- Async & Await
 	- Babel Loader
 	- Webpack
+	- Securing API Keys
 
 
 ## Usage
