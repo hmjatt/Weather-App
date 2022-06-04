@@ -23,7 +23,7 @@ An Application that let's you search weather for a specific location and toggles
     - Css Loader
     - Asset Resource Loader
 	- Html Webpack Plugin
-    - Source Maps Loader
+    - Source Maps
 	- Open Weather API
 	- Async & Await
 	- Babel Loader
