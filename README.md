@@ -18,10 +18,11 @@ An Application that let's you search weather for a specific location and toggles
 <a href="https://webpack.js.org/" target="_blank" rel="noreferrer"> <img style="margin-top:40px;" src="https://raw.githubusercontent.com/webpack/media/master/logo/logo-on-white-bg.svg" alt="webpack" width="180" height="100"/> </a>  &emsp;   <a href="https://www.npmjs.com/" target="_blank" rel="noreferrer"> <img style="margin-top:20px;" src="https://raw.githubusercontent.com/npm/logos/master/npm%20logo/npm-logo-red.svg" alt="npm" width="120" height="70"/> </a>
 
 
-## Includes the following features
+## Includes the following features/components:
 
     - Css Loader
     - Asset Resource Loader
+	- Html Webpack Plugin
     - Source Maps Loader
 	- Open Weather API
 	- Async & Await
@@ -63,6 +64,7 @@ Run Dev Server (Port 5500)
 	- [Babel Loader](https://webpack.js.org/loaders/babel-loader/#root)
 	- [Asset Management](https://webpack.js.org/guides/asset-management/)
 	- [Source Maps](https://webpack.js.org/loaders/source-map-loader/#root)
+	- [Html Webpack Plugin](https://webpack.js.org/plugins/html-webpack-plugin/)
 
 
 
