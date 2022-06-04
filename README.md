@@ -63,8 +63,8 @@ Run Dev Server (Port 5500)
 	- [Documentation](https://webpack.js.org/concepts/)
 	- [Babel Loader](https://webpack.js.org/loaders/babel-loader/#root)
 	- [Asset Management](https://webpack.js.org/guides/asset-management/)
-	- [Source Maps](https://webpack.js.org/loaders/source-map-loader/#root)
-	- [Html Webpack Plugin](https://webpack.js.org/plugins/html-webpack-plugin/)
+	- [Source Maps](https://webpack.js.org/configuration/devtool/)
+	- [Html Webpack Plugin & Cleaning Dist Folder ](https://webpack.js.org/guides/output-management/)
 
 
 
