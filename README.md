@@ -28,7 +28,7 @@ An Application that let's you search weather for a specific location and toggles
 	- Async & Await
 	- Babel Loader
 	- Webpack
-	- Securing API Keys
+	- Securing API Keys using environment variables 
 
 
 ## Usage
@@ -65,6 +65,24 @@ Run Dev Server (Port 5500)
 	- [Asset Management](https://webpack.js.org/guides/asset-management/)
 	- [Source Maps](https://webpack.js.org/configuration/devtool/)
 	- [Html Webpack Plugin & Cleaning Dist Folder ](https://webpack.js.org/guides/output-management/)
+
+5. YouTube
+	- [Web Dev Simplified(Build a Weather App With JavaScript)](https://www.youtube.com/watch?v=QH2-TGUlwu4)
+	- [James Q Quick(Securing API key)](https://www.youtube.com/watch?v=QH2-TGUlwu4)
+	- [Laugh a Little :smile:](https://www.youtube.com/watch?v=QH2-TGUlwu4)
+
+
+## Notes
+
+	- I have secured the API key using environment variables. This is to prevent someone from getting the API key and using it to access the API. This is a security feature and adds a security layer to app.
+
+	- I have used the Open Weather API to get the weather data. This is a free API that allows you to get the weather data for a specific location(view Documentation for details). This API has 60 requests per minute(1,000,000 requests per month) limit, view pricing information for more details.
+
+	- As stated in the James Q Quick's video, securing an api with environment variables does add a security layer that hides API key. But there are ways around this and during a call to the API, your API key is passed as a query parameter. This means that the API key is visible in the source code in the browser(or POSTMAN).
+
+	- Using environment variables is appropriate for this project because it is a small project, API key is free and is limited so someone can't abuse it. But if you were to use this project in a larger scale project, you would need to use a more secure method of storing the API key. For example, you could use a database, JWT auth, Bcrypt Package or even a Back-end server as a wrapper as stated in James Q Quick's video. This is a tough problem to solve tbh.
+
+## Future Changes/Fixes
 
 
 
