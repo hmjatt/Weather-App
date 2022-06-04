@@ -1,0 +1,8 @@
+:root {
+	--clr-primary: rgb(41, 145, 255);
+}
+
+html {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: var(--clr-primary);
+}
