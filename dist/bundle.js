@@ -658,6 +658,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var iconAttr = document.getElementById('icon');
 iconAttr.src = _images_cloudy_png__WEBPACK_IMPORTED_MODULE_1__;
+console.log('Webpack environment is configured for development successfully!');
 })();
 
 /******/ })()
