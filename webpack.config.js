@@ -39,6 +39,7 @@ module.exports = {
 			title: 'Weather App',
 			filename: 'index.html',
 			template: './src/template.html',
+			favicon: './src/images/cloudy.png',
 		}),
 	]
 };
