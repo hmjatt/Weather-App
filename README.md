@@ -84,21 +84,21 @@ Run Dev Server (Port 5500)
 	- [Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
 
-## Notes
+## Notes/Remarks
 
-	- I have secured the API key using environment variables created using Dotenv(NPM module). This is to prevent someone from getting the API key and using it to access the API. This is a security feature and adds a security layer to app.
+- I have secured the API key using environment variables created using Dotenv(NPM module). This is to prevent someone from getting the API key and using it to access the API. This is a security feature and adds a security layer to app.
 
-	- Express.js which is a middleware built on top of node.js which is used to handle the requests and responses, setup/manage server, etc(check Documentation for details) and in this case is used to setup our server. We use ExpressJS to access API key from inside our server and is going to get weather for us from Open Weather API. So that we don't expose the API key to the client(front-end). It adds another security layer to our app. Kyle @ WebDevSimplified shows how to do this.
+- Express.js which is a middleware built on top of node.js which is used to handle the requests and responses, setup/manage server, etc(check Documentation for details) and in this case is used to setup our server. We use ExpressJS to access API key from inside our server and is going to get weather for us from Open Weather API. So that we don't expose the API key to the client(front-end). It adds another security layer to our app. Kyle @ WebDevSimplified shows how to do this.
 
-	- Fetch API is a JavaScript API for making HTTP requests. It is used to make HTTP requests and get the response. It is used to get the weather data along with ExpressJS from Open Weather API.
+- Fetch API is a JavaScript API for making HTTP requests. It is used to make HTTP requests and get the response. It is used to get the weather data along with ExpressJS from Open Weather API.
 
-	- Async & Await is a JavaScript feature that allows us to write asynchronous code in a synchronous manner. It is used to make our code more readable and easier to understand.
+- Async & Await is a JavaScript feature that allows us to write asynchronous code in a synchronous manner. It is used to make our code more readable and easier to understand.
 
-	- I have used the Open Weather API to get the weather data. This is a free API that allows you to get the weather data for a specific location(view Documentation for details). This API has 60 requests per minute(1,000,000 requests per month) limit, view pricing information for more details.
+- I have used the Open Weather API to get the weather data. This is a free API that allows you to get the weather data for a specific location(view Documentation for details). This API has 60 requests per minute(1,000,000 requests per month) limit, view pricing information for more details.
 
-	- As stated in the James Q Quick's video, securing an api with environment variables does add a security layer that hides API key. But there are ways around this and during a call to the API, your API key is passed as a query parameter. This means that the API key is visible in the source code in the browser(or POSTMAN).
+- As stated in the James Q Quick's video, securing an api with environment variables does add a security layer that hides API key. But there are ways around this and during a call to the API, your API key is passed as a query parameter. This means that the API key is visible in the source code in the browser(or POSTMAN).
 
-	- Using environment variables is appropriate for this project because it is a small project(no need to authenticate user for just checking the weather), API key is free and request quota is limited so someone can't abuse it. But if you were to use an API in a larger scale project(where a user needs to log in), you would need to use a more secure method of storing the API key. For example, you could use a database, JWT auth, Bcrypt Package or even a Back-end server as a wrapper as stated in James Q Quick's video to authenticate a user.
+- Using environment variables is appropriate for this project because it is a small project(no need to authenticate user for just checking the weather), API key is free and request quota is limited so someone can't abuse it. But if you were to use an API in a larger scale project(where a user needs to log in), you would need to use a more secure method of storing the API key. For example, you could use a database, JWT auth, Bcrypt Package or even a Back-end server as a wrapper as stated in James Q Quick's video to authenticate a user.
 
 ## Future Changes/Fixes
 
