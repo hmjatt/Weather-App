@@ -25,6 +25,7 @@ An Application that let's you search weather for a specific location and toggles
 	- Html Webpack Plugin
     - Source Maps
 	- Open Weather API
+	- Giphy API
 	- Fetch API
 	- Async & Await
 	- Babel Loader
