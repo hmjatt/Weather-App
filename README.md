@@ -85,6 +85,9 @@ Run Dev Server (Port 5500)
 8. Fetch API
 	- [Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
+9. Giphy API
+	- [Documentation](https://developers.giphy.com/docs/api#quick-start-guide)
+
 
 ## Notes/Remarks
 
@@ -97,6 +100,8 @@ Run Dev Server (Port 5500)
 - Async & Await is a JavaScript feature that allows us to write asynchronous code in a synchronous manner. It is used to make our code more readable and easier to understand.
 
 - I have used the Open Weather API to get the weather data. This is a free API that allows you to get the weather data for a specific location(view Documentation for details). This API has 60 requests per minute(1,000,000 requests per month) limit, view pricing information for more details.
+
+- I have used the Giphy API to get the gifs for the weather. This is a free API that allows you to get the gifs for the weather. This API has 1,000 requests per day limit, view documentation for more details.
 
 - As stated in the James Q Quick's video, securing an api with environment variables does add a security layer that hides API key. But there are ways around this and during a call to the API, your API key is passed as a query parameter. This means that the API key is visible in the source code in the browser(or POSTMAN).
 
