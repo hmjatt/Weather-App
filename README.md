@@ -54,8 +54,8 @@ Run Dev Server (Port 5500)
 1. The Odin Project
     - [Article](https://www.theodinproject.com/lessons/node-path-javascript-weather-app)
     - [Working With APIs](https://www.theodinproject.com/lessons/node-path-javascript-working-with-apis)
-	- [JSON](https://www.theodinproject.com/lessons/node-path-javascript-json)
-	- [Async & Await](https://www.theodinproject.com/lessons/node-path-javascript-async-and-await)
+    - [JSON](https://www.theodinproject.com/lessons/node-path-javascript-json)
+    - [Async & Await](https://www.theodinproject.com/lessons/node-path-javascript-async-and-await)
 
 2. Design Inspiration
 	- [Dribbble(Offdesignarea)](https://dribbble.com/shots/15661680-Weather-App)
@@ -109,7 +109,9 @@ Run Dev Server (Port 5500)
 
 ## Future Changes/Fixes
 
+- Add a Dashboard
 
+- Add Maps
 
 #### Quote
 
