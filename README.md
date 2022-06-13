@@ -59,6 +59,7 @@ Run Dev Server (Port 5500)
 
 2. Design Inspiration
 	- [Dribbble(Offdesignarea)](https://dribbble.com/shots/15661680-Weather-App)
+	- [Dribbble(KhoaVu)](https://dribbble.com/shots/15138732-Weather-app)
 	
 3. Open Weather API
 	- [Documentation](https://openweathermap.org/api)
