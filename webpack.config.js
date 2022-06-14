@@ -41,6 +41,7 @@ module.exports = {
 			filename: 'index.html',
 			template: './src/template.html',
 			favicon: './src/images/cloudy.png',
+			excludeChunks: ['server'],
 		}),
 	]
 };
