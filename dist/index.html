@@ -14,15 +14,35 @@
 <body>
 	<main id="mainContainer">
 		<div id="currentWeather">
+			<section>
+				<div class="location" data-location>Enter A Location</div>
+			</section>
+
 			<section id="gifContainer"></section>
+
 			<section id="currentTemperature">
 				<div class="general-information">
-					<div class="weather" data-weather></div>
-					<div class="status" data-status>Enter A Location</div>
-					<div class="location" data-location>To Find The Weather</div>
+					<div class="weather" data-weather>Enter A Location</div>
+					<div class="status" data-status>To Find the Weather</div>
+					<div class="date" data-date>Date</div>
 				  </div>
 			</section>
-			<section id="detailSection"></section>
+
+			<section id="detailSection">
+				<div class="detail">
+					<div class="title">Wind</div>
+					<div class="value" data-wind>TBD</div>
+				  </div>
+				  <div class="detail bordered">
+					<div class="title">Humidity</div>
+					<div class="value" data-temperature>TBD</div>
+				  </div>
+				  <div class="detail">
+					<div class="title">Precipitation</div>
+					<div class="value" data-precipitation>TBD</div>
+				  </div>
+				</div>
+			</section>
 		</div>
 
 		<div id="attr">
