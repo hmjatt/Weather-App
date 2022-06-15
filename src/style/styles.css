@@ -23,21 +23,22 @@ main {
 	flex-direction: column;
 	align-items: center;
 	background-color: var(--clr-black);
-	height: 80vh;
+	height: 90vh;
 	width: 70vw;
-	max-width: 800px;
-	margin-top: 7%;
-	border-radius: 70px;
+	max-width: 1200px;
+	margin-top: 1%;
+	border-radius: 35px;
+	transition: all 0.5s ease-in-out;
 }
 
-footer {
+#attr {
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	margin-bottom: 10px;
+	margin-bottom: 1%;
 }
 
 a {
@@ -45,4 +46,22 @@ a {
 	color: var(--clr-footer);
 	display: flex;
 	align-items: center;
+}
+
+@media (max-width: 1200px) {
+	main {
+		width: 95vw;
+		height: 97vh;
+		transition: all 0.5s ease-in-out;
+		margin-top: 2%;
+	}
+
+	#attr {
+		margin-bottom: 5%;
+	}
+
+	#icon {
+		width: 50px;
+		height: 50px;
+	}
 }
