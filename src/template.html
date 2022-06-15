@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><%= htmlWebpackPlugin.options.title %></title>
+	<title>
+		<%= htmlWebpackPlugin.options.title %>
+	</title>
 	<meta name="author" content="Harmeet Matharoo">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 	<main id="mainContainer">
 		<div id="currentWeather">
@@ -25,37 +29,38 @@
 					<div class="weather" data-weather>Enter A Location</div>
 					<div class="status" data-status>To Find the Weather</div>
 					<div class="date" data-date>Date</div>
-				  </div>
+				</div>
 			</section>
 
 			<section id="detailSection">
 				<div class="detail">
 					<div class="title">Wind</div>
 					<div class="value" data-wind>TBD</div>
-				  </div>
-				  <div class="detail bordered">
+				</div>
+				<div class="detail bordered">
 					<div class="title">Humidity</div>
 					<div class="value" data-temperature>TBD</div>
-				  </div>
-				  <div class="detail">
+				</div>
+				<div class="detail">
 					<div class="title">Precipitation</div>
 					<div class="value" data-precipitation>TBD</div>
-				  </div>
 				</div>
-			</section>
+		</div>
+		</section>
 
-			<section id="citySearchContainer">
-				<input type="text" id="citySearch" data-city-search placeholder="Enter Location">
-			</section>
+		<section id="citySearchContainer">
+			<input type="text" id="citySearch" data-city-search placeholder="Enter Location">
+		</section>
 
 		</div>
 
 		<div id="attr">
 			<a href="https://www.flaticon.com/free-icons/weather" title="weather icons">
 				<img src="" alt="tab-icon" id="icon"> &nbsp; &nbsp; - By Freepik @Flaticon
-			</a>	
+			</a>
 		</div>
 	</main>
 	<script defer src="bundle.js"></script>
 </body>
+
 </html>
