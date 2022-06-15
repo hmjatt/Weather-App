@@ -16,6 +16,14 @@ app.use(express.json());
 app.use(express.static('public'));
 
 //setup our endpoint
-app.post('/weather', (req, res) => {
+// app.post('/weather', (req, res) => {
 	
+// });
+
+app.get("/", (req, res) => {
+	res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
+
+const server = app.listen (process.env.PORT || 4000);
+const portNumber = server.address().port;
+console.log("it works "+ portNumber);
