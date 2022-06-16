@@ -47,7 +47,16 @@ __webpack_require__.r(__webpack_exports__);
 
 function interfaceDOM() {
   var iconAttr = document.getElementById('icon');
-  iconAttr.src = _images_cloudy_png__WEBPACK_IMPORTED_MODULE_0__;
+  iconAttr.src = _images_cloudy_png__WEBPACK_IMPORTED_MODULE_0__; //cache the DOM
+
+  var locationEle = document.querySelector('[data-location]');
+  var temperatureEle = document.querySelector('[data-temperature]');
+  var statusEle = document.querySelector('[data-status]');
+  var dateEle = document.querySelector('[data-date]');
+  var precipitationEle = document.querySelector('[data-precipitation]');
+  var windEle = document.querySelector('[data-wind]');
+  var humidityEle = document.querySelector('[data-humidity]');
+  var citySearchEle = document.querySelector('[data-city-search]');
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (interfaceDOM);
