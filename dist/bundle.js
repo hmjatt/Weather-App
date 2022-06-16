@@ -2,6 +2,36 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/getWeather.js":
+/*!***************************!*\
+  !*** ./src/getWeather.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function getWeather() {
+  // create an IIFE for appLogic
+  var getCurrentWeather = function () {
+    //get current weather from openweathermap API
+    var currentWeather = function currentWeather() {
+      console.log('getCurrentWeather');
+    };
+
+    return {
+      currentWeather: currentWeather
+    };
+  }();
+
+  getCurrentWeather.currentWeather();
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getWeather);
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style/styles.css":
 /*!********************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/style/styles.css ***!
@@ -736,11 +766,13 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style/styles.css */ "./src/style/styles.css");
 /* harmony import */ var _images_cloudy_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/cloudy.png */ "./src/images/cloudy.png");
+/* harmony import */ var _getWeather_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getWeather.js */ "./src/getWeather.js");
+
 
 
 var iconAttr = document.getElementById('icon');
 iconAttr.src = _images_cloudy_png__WEBPACK_IMPORTED_MODULE_1__;
-console.log('Webpack environment is configured for development successfully!');
+document.addEventListener('DOMContentLoaded', _getWeather_js__WEBPACK_IMPORTED_MODULE_2__["default"]);
 })();
 
 /******/ })()

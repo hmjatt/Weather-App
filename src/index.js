@@ -1,8 +1,9 @@
 import './style/styles.css';
 import icon from './images/cloudy.png';
+import getWeather from './getWeather.js';
 
 
 const iconAttr = document.getElementById('icon');
 iconAttr.src = icon;
 
-console.log('Webpack environment is configured for development successfully!');
+document.addEventListener('DOMContentLoaded', getWeather);
