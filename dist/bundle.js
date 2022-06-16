@@ -32,6 +32,28 @@ function getWeather() {
 
 /***/ }),
 
+/***/ "./src/interfaceDOM.js":
+/*!*****************************!*\
+  !*** ./src/interfaceDOM.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _images_cloudy_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/cloudy.png */ "./src/images/cloudy.png");
+
+
+function interfaceDOM() {
+  var iconAttr = document.getElementById('icon');
+  iconAttr.src = _images_cloudy_png__WEBPACK_IMPORTED_MODULE_0__;
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (interfaceDOM);
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style/styles.css":
 /*!********************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/style/styles.css ***!
@@ -765,13 +787,12 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style/styles.css */ "./src/style/styles.css");
-/* harmony import */ var _images_cloudy_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/cloudy.png */ "./src/images/cloudy.png");
+/* harmony import */ var _interfaceDOM_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./interfaceDOM.js */ "./src/interfaceDOM.js");
 /* harmony import */ var _getWeather_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getWeather.js */ "./src/getWeather.js");
 
 
 
-var iconAttr = document.getElementById('icon');
-iconAttr.src = _images_cloudy_png__WEBPACK_IMPORTED_MODULE_1__;
+document.addEventListener('DOMContentLoaded', _interfaceDOM_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
 document.addEventListener('DOMContentLoaded', _getWeather_js__WEBPACK_IMPORTED_MODULE_2__["default"]);
 })();
 
