@@ -20,7 +20,11 @@ app.use(express.static('public'));
 
 //setup our endpoint
 app.post('/weather', (req, res) => {
-	console.log(req.body);
+	const url = `https://api.openweathermap.org/data/2.5/weather?q=${req.body.city}&appid=${OPEN_WEATHER_API_KEY}`;
+  axios({
+    url: url,
+    responseType: 'json'
+  }).then(data => res.json(data.data))
 })
 
 //listen on port 3000
