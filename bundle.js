@@ -60,6 +60,7 @@ function interfaceDOM() {
   var precipitationEle = document.querySelector('[data-precipitation]');
   var windEle = document.querySelector('[data-wind]');
   var humidityEle = document.querySelector('[data-humidity]');
+  var citySearchForm = document.getElementById('[citySearchForm]');
   var citySearchEle = document.querySelector('[data-city-search]');
 }
 
