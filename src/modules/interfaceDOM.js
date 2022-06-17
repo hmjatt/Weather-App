@@ -15,7 +15,7 @@ function interfaceDOM() {
 	const windEle = document.querySelector('[data-wind]');
 	const humidityEle = document.querySelector('[data-humidity]');
 	const citySearchForm = document.getElementById('[citySearchForm]');
-	const citySearchEle = document.querySelector('[data-city-search]');
+	// const citySearchEle = document.querySelector('[data-city-search]');
 }
 
 
