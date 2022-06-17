@@ -12,6 +12,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _interfaceDOM__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./interfaceDOM */ "./src/modules/interfaceDOM.js");
+
+document.addEventListener('DOMContentLoaded', _interfaceDOM__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
 function getWeather() {
   // create an IIFE for appLogic
   var getCurrentWeather = function () {
