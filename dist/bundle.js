@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/getWeather.js":
-/*!***************************!*\
-  !*** ./src/getWeather.js ***!
-  \***************************/
+/***/ "./src/modules/getWeather.js":
+/*!***********************************!*\
+  !*** ./src/modules/getWeather.js ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -32,17 +32,17 @@ function getWeather() {
 
 /***/ }),
 
-/***/ "./src/interfaceDOM.js":
-/*!*****************************!*\
-  !*** ./src/interfaceDOM.js ***!
-  \*****************************/
+/***/ "./src/modules/interfaceDOM.js":
+/*!*************************************!*\
+  !*** ./src/modules/interfaceDOM.js ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _images_cloudy_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/cloudy.png */ "./src/images/cloudy.png");
+/* harmony import */ var _images_cloudy_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/cloudy.png */ "./src/images/cloudy.png");
 
 
 function interfaceDOM() {
@@ -796,13 +796,13 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style/styles.css */ "./src/style/styles.css");
-/* harmony import */ var _interfaceDOM_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./interfaceDOM.js */ "./src/interfaceDOM.js");
-/* harmony import */ var _getWeather_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getWeather.js */ "./src/getWeather.js");
+/* harmony import */ var _modules_interfaceDOM__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/interfaceDOM */ "./src/modules/interfaceDOM.js");
+/* harmony import */ var _modules_getWeather__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/getWeather */ "./src/modules/getWeather.js");
 
 
 
-document.addEventListener('DOMContentLoaded', _interfaceDOM_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
-document.addEventListener('DOMContentLoaded', _getWeather_js__WEBPACK_IMPORTED_MODULE_2__["default"]);
+document.addEventListener('DOMContentLoaded', _modules_interfaceDOM__WEBPACK_IMPORTED_MODULE_1__["default"]);
+document.addEventListener('DOMContentLoaded', _modules_getWeather__WEBPACK_IMPORTED_MODULE_2__["default"]);
 })();
 
 /******/ })()
