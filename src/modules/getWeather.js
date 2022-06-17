@@ -1,3 +1,8 @@
+import interfaceDOM from './interfaceDOM';
+
+document.addEventListener('DOMContentLoaded', interfaceDOM);
+
+
 function getWeather() {
 
 	// create an IIFE for appLogic
