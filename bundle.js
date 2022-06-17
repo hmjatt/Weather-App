@@ -35,26 +35,15 @@ function getWeather() {
 
       function _getWeatherNow() {
         _getWeatherNow = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(city) {
-          var response, getData;
           return _regeneratorRuntime().wrap(function _callee$(_context) {
             while (1) {
               switch (_context.prev = _context.next) {
                 case 0:
-                  _context.next = 2;
-                  return fetch("https://api.openweathermap.org/data/2.5/weather?q=".concat(city, "&appid=apiKey"), {
-                    mode: 'cors'
-                  });
-
-                case 2:
-                  response = _context.sent;
-                  _context.next = 5;
-                  return response.json();
-
-                case 5:
-                  getData = _context.sent;
+                  // const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=apiKey`, { mode: 'cors' });
+                  // const getData = await response.json();
                   console.log(getData);
 
-                case 7:
+                case 1:
                 case "end":
                   return _context.stop();
               }
@@ -76,7 +65,70 @@ function getWeather() {
     var citySearchEle = document.querySelector('[data-city-search]');
     e.preventDefault();
     var city = citySearchEle.value;
-    getCurrentWeather.currentWeather(city);
+
+    if (city === '') {
+      return;
+    } // fetch('/weather', {
+    // 	method: 'POST',
+    // 	// headers: {
+    // 	// 	'Content-Type': 'application/json',
+    // 	// 	'Accept': 'application/json'
+    // 	// },
+    // 	body: JSON.stringify({
+    // 		city: city,
+    // 	})
+    // }).then(res => res.json()).then(data => {
+    // 	// getCurrentWeather.currentWeather(city);
+    // 	console.log(data);
+    // })
+
+
+    function getWeatherNow(_x2) {
+      return _getWeatherNow2.apply(this, arguments);
+    }
+
+    function _getWeatherNow2() {
+      _getWeatherNow2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(city) {
+        var response, getData;
+        return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
+                return fetch('/weather', {
+                  mode: 'cors',
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                  },
+                  body: JSON.stringify({
+                    city: city
+                  })
+                })["catch"](function (err) {
+                  return console.log(err);
+                });
+
+              case 2:
+                response = _context2.sent;
+                _context2.next = 5;
+                return response.json();
+
+              case 5:
+                getData = _context2.sent;
+                console.log(getData);
+
+              case 7:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
+      }));
+      return _getWeatherNow2.apply(this, arguments);
+    }
+
+    getWeatherNow(city);
   });
 }
 
