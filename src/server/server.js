@@ -42,23 +42,20 @@ const url = `https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appi
   
 //   getData(url)
 
-app.get('/', (req, res) => {
-	// res.send('Hello World!')
-	
-	async () => {
-		  try {
-		    const response = await axios.get( `https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=${OPEN_WEATHER_API_KEY}`)
-		    const data = response.data
-			//send data to client
-			// response.send(data);
-			res.send(data);
-		    console.log(data)
-		  } catch (error) {
-		    console.log(error)
-		  }
-		}
-});
 
+const getData = async (url) => {
+	try {
+		const response = await axios.get(url)
+		const data = response.data
+		//send data to client
+		// response.send(data);
+		console.log(data)
+	} catch (error) {
+		console.log(error)
+	}
+}
+
+getData(url)
 
 
 

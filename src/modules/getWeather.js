@@ -86,7 +86,11 @@ function getWeather() {
 		// const axios = require('axios');
 		console.log('app works')
 		
+		axios.post('/weather', {
 		
+		}).then(res => {
+			console.log(res);
+		}).catch(err => console.log(err));
 
 
 		

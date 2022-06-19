@@ -2549,6 +2549,11 @@ function getWeather() {
 
 
     console.log('app works');
+    axios.post('/weather', {}).then(function (res) {
+      console.log(res);
+    })["catch"](function (err) {
+      return console.log(err);
+    });
   });
 }
 
