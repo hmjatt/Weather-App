@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
+    entry: './src/public/index.js',
     devtool: 'inline-source-map',
     output: {
         filename: 'bundle.js',
@@ -39,8 +39,8 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			title: 'Weather App',
 			filename: 'index.html',
-			template: './src/template.html',
-			favicon: './src/images/cloudy.png',
+			template: './src/public/template.html',
+			favicon: './src/public/images/cloudy.png',
 		}),
 	]
 };

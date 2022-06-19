@@ -9,6 +9,12 @@ const GIPHY_API_KEY = process.env.GIPHY_API_KEY;
 //setup our server
 const express = require('express');
 
+// 
+const router = express.Router();
+
+// axios is a library that allows us to make HTTP requests
+const axios = require('axios')
+
 //setup app
 const app = express();
 
@@ -19,15 +25,72 @@ app.use(express.json());
 app.use(express.static('public'));
 
 //setup our endpoint
-app.post('/weather', (req, res) => {
-	const url = `https://api.openweathermap.org/data/2.5/weather?q=${req.body.city}&appid=${OPEN_WEATHER_API_KEY}`;
-  axios({
-    url: url,
-    responseType: 'json'
-  }).then(data => res.json(data.data))
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=${OPEN_WEATHER_API_KEY}`;
+
+// const getData = async (url, req, res) => {
+// 	try {
+// 	  const response = await axios.get(url)
+// 	  const data = response.data
+// 	  //send data to client
+// 	  // response.send(data);
+// 	  res.send(data);
+// 	  console.log(data)
+// 	} catch (error) {
+// 	  console.log(error)
+// 	}
+//   }
+  
+//   getData(url)
+
+app.get('/', (req, res) => {
+	// res.send('Hello World!')
+	
+	async () => {
+		  try {
+		    const response = await axios.get( `https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=${OPEN_WEATHER_API_KEY}`)
+		    const data = response.data
+			//send data to client
+			// response.send(data);
+			res.send(data);
+		    console.log(data)
+		  } catch (error) {
+		    console.log(error)
+		  }
+		}
+});
+
+
+
+
+
+
+
+
+
+// const getData = async (url) => {
+//   try {
+//     const response = await axios.get(url)
+//     const data = response.data
+// 	//send data to client
+// 	// response.send(data);
+// 	res.send(data);
+//     console.log(data)
+//   } catch (error) {
+//     console.log(error)
+//   }
+// }
+
+// getData(url)
+
+// listen on port 3000
+app.listen(3000, () => {
+
+	console.log('Server Started');
+	
+
 })
 
-//listen on port 3000
-app.listen(3000, () => {
-	console.log('Server Started')
-})
+// module.exports = router;
+
+
+// `https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=${OPEN_WEATHER_API_KEY}`
