@@ -49,7 +49,7 @@ app.get("/", (req, res) => {
 
 
 // listen on port 3000
-app.listen(5500, () => {
+app.listen(3000, () => {
 
 	console.log('Server Started');
 
