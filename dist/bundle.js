@@ -2506,6 +2506,8 @@ function getWeather() {
     if (city === '') {
       return;
     }
+
+    console.log('getWeather');
   });
 }
 

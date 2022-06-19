@@ -56,7 +56,7 @@ app.listen(3000, () => {
 
 })
 
-// module.exports = router;
+module.exports = app;
 
 
 // `https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=${OPEN_WEATHER_API_KEY}`

@@ -36,7 +36,7 @@ function getWeather() {
 			return;
 		}
 
-
+		console.log('getWeather');
 
 
 		

@@ -4,3 +4,4 @@ import getWeather from '../modules/getWeather';
 
 document.addEventListener('DOMContentLoaded', interfaceDOM);
 document.addEventListener('DOMContentLoaded', getWeather);
+
