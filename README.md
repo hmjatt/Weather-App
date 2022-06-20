@@ -30,7 +30,7 @@ An Application that let's you search weather for a specific location and toggles
 	- Async & Await
 	- Babel Loader
 	- Webpack
-	- Dotenv(NPM Module)
+	- Dotenv-webpack(NPM Module)
 
 
 ## Usage
@@ -75,8 +75,8 @@ Run Dev Server (Port 5500)
 	- [James Q Quick(Securing API key)](https://www.youtube.com/watch?v=QH2-TGUlwu4)
 	- [Laugh a Little :smile:](https://www.youtube.com/watch?v=QH2-TGUlwu4)
 
-6. Dotenv(NPM module)
-	- [Documentation/Package](https://www.npmjs.com/package/dotenv)
+6. Dotenv-webpack(NPM module)
+	- [Documentation/Package](https://www.npmjs.com/package/dotenv-webpack)
 
 7. Fetch API
 	- [Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
@@ -86,7 +86,7 @@ Run Dev Server (Port 5500)
 
 ## Notes/Remarks
 
-- I have secured the API key using environment variables created using Dotenv(NPM module). This is to prevent someone from getting the API key and using it to access the API. This is a security feature and adds a security layer to app. But API key is still visible in the dev tools. To secure an API properly, you should use a backend like ExpressJS.
+- I have secured the API key using environment variables created using Dotenv-webpack(NPM module). This is to prevent someone from getting the API key and using it to access the API. This is a security feature and adds a security layer to app. But API key is still visible in the dev tools. To secure an API properly, you should use a backend like ExpressJS.
 
 - Async & Await is a JavaScript feature that allows us to write asynchronous code in a synchronous manner. It is used to make our code more readable and easier to understand.
 
