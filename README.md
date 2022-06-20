@@ -30,9 +30,7 @@ An Application that let's you search weather for a specific location and toggles
 	- Async & Await
 	- Babel Loader
 	- Webpack
-	- Securing API Keys using environment variables
 	- Dotenv(NPM Module)
-	- Axios
 
 
 ## Usage
@@ -80,15 +78,11 @@ Run Dev Server (Port 5500)
 6. Dotenv(NPM module)
 	- [Documentation/Package](https://www.npmjs.com/package/dotenv)
 
-8. Fetch API
+7. Fetch API
 	- [Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
-9. Giphy API
+8. Giphy API
 	- [Documentation](https://developers.giphy.com/docs/api#quick-start-guide)
-
-10. Axios(NPM module)
-	- [Documentation/Package](https://www.npmjs.com/package/axios)
-
 
 ## Notes/Remarks
 
