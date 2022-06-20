@@ -32,7 +32,6 @@ An Application that let's you search weather for a specific location and toggles
 	- Webpack
 	- Securing API Keys using environment variables
 	- Dotenv(NPM Module)
-	- ExpressJS
 	- Axios
 
 
@@ -49,11 +48,6 @@ Run Dev Server (Port 5500)
     npx webpack --watch // Clientside
 
     ```
-
-	```
-	npm run server // Starts the server
-	
-	```
 
 ### Links to content that helped me with this project
 
@@ -86,9 +80,6 @@ Run Dev Server (Port 5500)
 6. Dotenv(NPM module)
 	- [Documentation/Package](https://www.npmjs.com/package/dotenv)
 
-7. ExpressJS(Middleware)
-	- [Documentation/Package](https://expressjs.com/en/api.html)
-
 8. Fetch API
 	- [Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
@@ -101,19 +92,13 @@ Run Dev Server (Port 5500)
 
 ## Notes/Remarks
 
-- I have secured the API key using environment variables created using Dotenv(NPM module). This is to prevent someone from getting the API key and using it to access the API. This is a security feature and adds a security layer to app.
-
-- Express.js which is a middleware built on top of node.js which is used to handle the requests and responses, setup/manage server, etc(check Documentation for details) and in this case is used to setup our server. We use ExpressJS to access API key from inside our server and is going to get weather for us from Open Weather API. So that we don't expose the API key to the client(front-end). It adds another security layer to our app. Kyle @ WebDevSimplified shows how to do this.
-
-- Fetch API is a JavaScript API for making HTTP requests. It is used to make HTTP requests and get the response. It is used to get the weather data along with ExpressJS from Open Weather API.
+- I have secured the API key using environment variables created using Dotenv(NPM module). This is to prevent someone from getting the API key and using it to access the API. This is a security feature and adds a security layer to app. But API key is still visible in the dev tools. To secure an API properly, you should use a backend like ExpressJS.
 
 - Async & Await is a JavaScript feature that allows us to write asynchronous code in a synchronous manner. It is used to make our code more readable and easier to understand.
 
 - I have used the Open Weather API to get the weather data. This is a free API that allows you to get the weather data for a specific location(view Documentation for details). This API has 60 requests per minute(1,000,000 requests per month) limit, view pricing information for more details.
 
 - I have used the Giphy API to get the gifs for the weather. This is a free API that allows you to get the gifs for the weather. This API has 1,000 requests per day limit, view documentation for more details.
-
-- Using Axios to make an API request to Open Weather API from our server.
 
 - As stated in the James Q Quick's video, securing an api with environment variables does add a security layer that hides API key. But there are ways around this and during a call to the API, your API key is passed as a query parameter. This means that the API key is visible in the source code in the browser(or POSTMAN).
 
