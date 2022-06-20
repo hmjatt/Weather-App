@@ -10,22 +10,22 @@ const GIPHY_API_KEY = process.env.GIPHY_API_KEY;
 const express = require('express');
 
 // 
-const router = express.Router();
+// const router = express.Router();
 
 // axios is a library that allows us to make HTTP requests
-const axios = require('axios')
+// const axios = require('axios')
 
 //setup app
 const app = express();
 
 //what we want our app to use, this case its JSON(we are going to be sending result as JSON to our server)
-app.use(express.json());
+// app.use(express.json());
 
 //setup our static, which is inside public folder
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 //setup our endpoint
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=${OPEN_WEATHER_API_KEY}`;
+// const url = `https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=${OPEN_WEATHER_API_KEY}`;
 
 // const getData = async (url) => {
 // 	try {
@@ -43,20 +43,23 @@ const url = `https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appi
 
 
 app.get("/", (req, res) => {
+	console.log("hello");
 	res.send("Hello, World!");
 });
 
 
 
 // listen on port 3000
-app.listen(3000, () => {
+// app.listen(3000, () => {
 
-	console.log('Server Started');
+// 	console.log('Server Started');
 
 
-})
+// })
 
-module.exports = app;
+app.listen(3000);
+
+// module.exports = app;
 
 
 // `https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=${OPEN_WEATHER_API_KEY}`
