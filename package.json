@@ -29,7 +29,6 @@
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
-    "axios": "^0.27.2",
     "dotenv": "^16.0.1"
   }
 }
