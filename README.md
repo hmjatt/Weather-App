@@ -86,7 +86,7 @@ Run Dev Server (Port 5500)
 
 ## Notes/Remarks
 
-- I have secured the API key using environment variables created using Dotenv-webpack(NPM module). This is to prevent someone from getting the API key and using it to access the API. This is a security feature and adds a security layer to app. But API key is still visible in the dev tools. To secure an API properly, you should use a backend like ExpressJS.
+- I have secured the API key using environment variables created using Dotenv-webpack(NPM module). This is to prevent someone from abusing the API key. This is a security feature and adds a security layer to app. But API key is still visible in the dev tools. To secure an API properly, you should use a backend like ExpressJS.
 
 - Async & Await is a JavaScript feature that allows us to write asynchronous code in a synchronous manner. It is used to make our code more readable and easier to understand.
 
