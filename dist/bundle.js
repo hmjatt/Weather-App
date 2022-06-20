@@ -955,6 +955,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_getWeather__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/getWeather */ "./src/modules/getWeather.js");
 
 
+ // require('dotenv').config();
 
 document.addEventListener('DOMContentLoaded', _modules_interfaceDOM__WEBPACK_IMPORTED_MODULE_1__["default"]);
 document.addEventListener('DOMContentLoaded', _modules_getWeather__WEBPACK_IMPORTED_MODULE_2__["default"]);
