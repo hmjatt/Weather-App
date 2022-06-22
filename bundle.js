@@ -21,11 +21,10 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
- // import getGif from './getGif.js';
 
 var OPEN_WEATHER_API_KEY = "c80231576ff419a528c52d2a326a1b63";
 var GIPHY_API_KEY = "8WoOanNYllnHNjv6c48dgGJpqwGdGqCp";
-document.addEventListener('DOMContentLoaded', _interfaceDOM_js__WEBPACK_IMPORTED_MODULE_0__["default"]); // document.addEventListener('DOMContentLoaded', getGif);
+document.addEventListener('DOMContentLoaded', _interfaceDOM_js__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 function getWeather() {
   // create an IIFE for appLogic
@@ -63,7 +62,7 @@ function getWeather() {
 
                             case 5:
                               getGifData = _context.sent;
-                              weatherGif.src = getGifData.data[0].images.original.url; // console.log(getGifData.data[0])
+                              weatherGif.src = getGifData.data[0].images.original.url;
 
                             case 7:
                             case "end":
@@ -91,12 +90,10 @@ function getWeather() {
 
                 case 7:
                   getData = _context2.sent;
-                  description = getData.weather[0].description.split(' ').join('+'); // description = description;
-
+                  description = getData.weather[0].description.split(' ').join('+');
                   gif(description);
-                  console.log(description);
 
-                case 11:
+                case 10:
                 case "end":
                   return _context2.stop();
               }
@@ -124,10 +121,7 @@ function getWeather() {
     if (city === '') {
       return;
     } else {
-      getCurrentWeather.currentWeather(city); // console.log(description)
-      // getGif();
-      // getWeatherGif.weatherGif();
-
+      // getCurrentWeather.currentWeather(city);
       console.log("getting data from weather api and giphy api works");
     }
   });
@@ -906,12 +900,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_getWeather_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/getWeather.js */ "./src/modules/getWeather.js");
 
 
- // import getGif from '../modules/getGif.js';
-// const OPEN_WEATHER_API_KEY = process.env.OPEN_WEATHER_API_KEY;
-// console.log(process.env.OPEN_WEATHER_API_KEY);
 
+;
 document.addEventListener('DOMContentLoaded', _modules_interfaceDOM_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
-document.addEventListener('DOMContentLoaded', _modules_getWeather_js__WEBPACK_IMPORTED_MODULE_2__["default"]); // document.addEventListener('DOMContentLoaded', getGif);
+document.addEventListener('DOMContentLoaded', _modules_getWeather_js__WEBPACK_IMPORTED_MODULE_2__["default"]);
 })();
 
 /******/ })()
