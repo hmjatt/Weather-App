@@ -3,8 +3,8 @@ import icon from '../public/images/cloudy.png';
 
 function interfaceDOM() {
 
-	const iconAttr = document.getElementById('icon');
-	iconAttr.src = icon;
+	// const iconAttr = document.getElementById('icon');
+	// iconAttr.src = icon;
 
 	//cache the DOM
 	const locationEle = document.querySelector('[data-location]');

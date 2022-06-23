@@ -1,13 +1,13 @@
 :root {
-	--clr-primary: rgb(0, 20, 41);
+	--clr-primary:  rgb(83, 119, 147);
 	--clr-light-grey: rgb(212, 212, 212);
-	--clr-black: rgb(0, 4, 19);
+	--clr-black: rgb(13, 15, 24);
 }
 
 html {
 	font-family: 'Rubik', sans-serif;
 	background-color: var(--clr-primary);
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%291500AC' fill-opacity='0.4' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%291500AC' fill-opacity='0.8' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
 	font-weight: 300;
 	color: var(--clr-light-grey);
 }
@@ -33,7 +33,20 @@ main {
 	transition: all 0.5s ease-in-out;
 }
 
-#attr {
+.location, .status {
+	font-size: 2em;
+}
+
+#gifContainer {
+	height: 40vh;
+	width: 40vw;
+	background-color: var(--clr-light-grey);
+	border-radius: 10px;
+}
+
+
+
+/* #attr {
 	position: fixed;
 	left: 0;
 	bottom: 0;
@@ -48,7 +61,7 @@ a {
 	display: flex;
 	align-items: center;
 	color: var(--clr-light-grey);
-}
+} */
 
 @media (max-width: 1200px) {
 	main {
@@ -59,12 +72,12 @@ a {
 		padding: 1%;
 	}
 
-	#attr {
+	/* #attr {
 		margin-bottom: 5%;
 	}
 
 	#icon {
 		width: 40px;
 		height: 40px;
-	}
+	} */
 }
