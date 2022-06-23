@@ -43,6 +43,10 @@ section, .general-information, .detail {
 	font-size: 2em;
 }
 
+section {
+	padding: 1em;
+}
+
 #gifContainer {
 	height: 40vh;
 	width: 40vw;
@@ -53,6 +57,24 @@ section, .general-information, .detail {
 .weather {
 	font-size: 5em;
 	font-weight: 700;
+}
+
+#detailSection {
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+.detail div{
+	padding: 0.15em;
+}
+
+.date, .title {
+	font-size: 0.9em;
+}
+
+.value {
+	font-weight: 500;
 }
 
 
