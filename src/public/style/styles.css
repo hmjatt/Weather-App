@@ -14,7 +14,7 @@ html {
 
 body {
 	padding: 0;
-	margin: 0;
+	margin: 2%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -89,27 +89,11 @@ section {
 }
 
 
-/* #attr {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin-bottom: 1%;
-}
-
-a {
-	text-decoration: none;
-	display: flex;
-	align-items: center;
-	color: var(--clr-light-grey);
-} */
-
 @media (max-width: 1200px) {
+
+
 	main {
 		width: 95vw;
-		/* min-height: 97vh; */
 		transition: all 0.5s ease-in-out;
 		margin-top: 2%;
 		padding: 1%;
@@ -117,16 +101,6 @@ a {
 	}
 
 	#gifContainer {
-		/* height: 40vh; */
 		width: 80vw;
 	}
-
-	/* #attr {
-		margin-bottom: 5%;
-	}
-
-	#icon {
-		width: 40px;
-		height: 40px;
-	} */
 }
