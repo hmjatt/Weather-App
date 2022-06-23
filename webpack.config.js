@@ -41,7 +41,7 @@ module.exports = {
 			title: 'Weather App',
 			filename: 'index.html',
 			template: './src/public/template.html',
-			favicon: './src/public/images/cloudy.png',
+			favicon: './src/public/images/cloudy.svg',
 		}),
 		new Dotenv(),
 	]

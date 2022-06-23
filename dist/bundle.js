@@ -141,7 +141,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_images_cloudy_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../public/images/cloudy.png */ "./src/public/images/cloudy.png");
+/* harmony import */ var _public_images_cloudy_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../public/images/cloudy.svg */ "./src/public/images/cloudy.svg");
 
 
 function interfaceDOM() {
@@ -744,13 +744,13 @@ module.exports = "data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%
 
 /***/ }),
 
-/***/ "./src/public/images/cloudy.png":
+/***/ "./src/public/images/cloudy.svg":
 /*!**************************************!*\
-  !*** ./src/public/images/cloudy.png ***!
+  !*** ./src/public/images/cloudy.svg ***!
   \**************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "cloudy.png";
+module.exports = __webpack_require__.p + "cloudy.svg";
 
 /***/ })
 

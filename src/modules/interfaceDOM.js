@@ -1,4 +1,4 @@
-import icon from '../public/images/cloudy.png';
+import icon from '../public/images/cloudy.svg';
 
 
 function interfaceDOM() {
