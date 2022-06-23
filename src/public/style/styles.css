@@ -105,6 +105,11 @@ a {
 		padding: 1%;
 	}
 
+	#gifContainer {
+		/* height: 40vh; */
+		width: 80vw;
+	}
+
 	/* #attr {
 		margin-bottom: 5%;
 	}
