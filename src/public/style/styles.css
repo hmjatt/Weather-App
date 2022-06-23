@@ -33,6 +33,12 @@ main {
 	transition: all 0.5s ease-in-out;
 }
 
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .location, .status {
 	font-size: 2em;
 }
@@ -42,6 +48,11 @@ main {
 	width: 40vw;
 	background-color: var(--clr-light-grey);
 	border-radius: 10px;
+}
+
+.weather {
+	font-size: 5em;
+	font-weight: 700;
 }
 
 
