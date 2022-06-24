@@ -1,6 +1,7 @@
 import wind from '../public/images/wind.svg';
 import humidity from '../public/images/humidity.svg';
 import precipitation from '../public/images/precipitation.svg';
+import cloudy from '../public/images/cloudy.svg';
 
 
 function interfaceDOM() {
@@ -26,6 +27,7 @@ function interfaceDOM() {
 	windImgEle.src = wind;
 	humidityImgEle.src = humidity;
 	precipitaionImgEle.src = precipitation;
+	weatherGif.src = cloudy;
 
 }
 

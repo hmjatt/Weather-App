@@ -154,6 +154,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _public_images_wind_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../public/images/wind.svg */ "./src/public/images/wind.svg");
 /* harmony import */ var _public_images_humidity_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../public/images/humidity.svg */ "./src/public/images/humidity.svg");
 /* harmony import */ var _public_images_precipitation_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../public/images/precipitation.svg */ "./src/public/images/precipitation.svg");
+/* harmony import */ var _public_images_cloudy_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../public/images/cloudy.svg */ "./src/public/images/cloudy.svg");
+
 
 
 
@@ -177,6 +179,7 @@ function interfaceDOM() {
   windImgEle.src = _public_images_wind_svg__WEBPACK_IMPORTED_MODULE_0__;
   humidityImgEle.src = _public_images_humidity_svg__WEBPACK_IMPORTED_MODULE_1__;
   precipitaionImgEle.src = _public_images_precipitation_svg__WEBPACK_IMPORTED_MODULE_2__;
+  weatherGif.src = _public_images_cloudy_svg__WEBPACK_IMPORTED_MODULE_3__;
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (interfaceDOM);
@@ -761,6 +764,16 @@ module.exports = styleTagTransform;
 /***/ ((module) => {
 
 module.exports = "data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 80 80%27 width=%2780%27 height=%2780%27%3E%3Cpath fill=%27%291500AC%27 fill-opacity=%270.8%27 d=%27M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z%27%3E%3C/path%3E%3C/svg%3E";
+
+/***/ }),
+
+/***/ "./src/public/images/cloudy.svg":
+/*!**************************************!*\
+  !*** ./src/public/images/cloudy.svg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "cloudy.svg";
 
 /***/ }),
 
