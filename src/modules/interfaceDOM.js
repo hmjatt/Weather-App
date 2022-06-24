@@ -1,4 +1,7 @@
-import icon from '../public/images/cloudy.svg';
+// import icon from '../public/images/cloudy.svg';
+import wind from '../public/images/wind.svg';
+import humidity from '../public/images/humidity.svg';
+import precipitation from '../public/images/precipitation.svg';
 
 
 function interfaceDOM() {
@@ -16,6 +19,13 @@ function interfaceDOM() {
 	const humidityEle = document.querySelector('[data-humidity]');
 	const citySearchForm = document.getElementById('[citySearchForm]');
 	const weatherGif = document.getElementById('weatherGif');
+	const windImgEle = document.getElementById('wind');
+	const humidityImgEle = document.getElementById('humidity');
+	const precipitaionImgEle = document.getElementById('precipitation');
+
+	windImgEle.src = wind;
+	humidityImgEle.src = humidity;
+	precipitaionImgEle.src = precipitation;
 	// const citySearchEle = document.querySelector('[data-city-search]');
 }
 
