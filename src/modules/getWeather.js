@@ -24,12 +24,16 @@ function getWeather() {
 
 		const currentWeather = (city) => {
 
-			let units;
+			let units, windSpeed, tempDegree;
 
 			if(celsius.checked) {
 				units = "&units=metric";
+				windSpeed = " km/h";
+				tempDegree = "\u2103";
 			} else if(fahrenheit.checked) {
 				units = "&units=imperial";
+				windSpeed = " mph";
+				tempDegree = "\u2109";
 			}
 	
 
@@ -40,9 +44,12 @@ function getWeather() {
 				console.log(getData, typeof(getData.main.temp));
 				locationEle.innerText = getData.name;
 				// let temps = getData.main.temp
-				temperatureEle.innerText = Math.round(getData.main.temp);
+				temperatureEle.innerText = Math.round(getData.main.feels_like) + tempDegree;
 				statusEle.innerText = getData.weather[0].description;
 				dateEle.innerText = new Date().toDateString();
+				// precipitationEle.innerText = 
+				windEle.innerText = getData.wind.speed + " " + windSpeed;
+				humidityEle.innerText = getData.main.humidity + "%";
 
 			
 

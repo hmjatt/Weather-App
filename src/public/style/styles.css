@@ -33,7 +33,7 @@ main {
 	transition: all 0.5s ease-in-out;
 }
 
-section, .general-information, .detail, form {
+section, .general-information, .detail, form, #currentWeather {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
