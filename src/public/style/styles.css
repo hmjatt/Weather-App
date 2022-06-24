@@ -69,6 +69,10 @@ section {
 	padding: 0.15em;
 }
 
+.detail-img {
+	height: 70px;
+}
+
 .date, .title {
 	font-size: 0.9em;
 }
@@ -101,6 +105,6 @@ section {
 	}
 
 	#gifContainer {
-		width: 80vw;
+		width: 85vw;
 	}
 }
