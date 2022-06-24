@@ -29,76 +29,55 @@ document.addEventListener('DOMContentLoaded', _interfaceDOM_js__WEBPACK_IMPORTED
 function getWeather() {
   // create an IIFE for appLogic
   var getCurrentWeather = function () {
-    //get current weather from openweathermap API
+    //get current wealet units = "";
     var currentWeather = function currentWeather(city) {
+      // const celsius = document.getElementById('celsius');
+      // const fahrenheit = document.getElementById('fahrenheit');
+      var units;
+
+      if (celsius.checked) {
+        units = "&units=metric";
+      } else if (fahrenheit.checked) {
+        units = "&units=imperial";
+      }
+
       function weather(_x) {
         return _weather.apply(this, arguments);
       }
 
       function _weather() {
-        _weather = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(city) {
-          var response, getData, description, gif, _gif;
-
-          return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+        _weather = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(city) {
+          var response, getData;
+          return _regeneratorRuntime().wrap(function _callee$(_context) {
             while (1) {
-              switch (_context2.prev = _context2.next) {
+              switch (_context.prev = _context.next) {
                 case 0:
-                  _gif = function _gif3() {
-                    _gif = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(description) {
-                      var response, getGifData;
-                      return _regeneratorRuntime().wrap(function _callee$(_context) {
-                        while (1) {
-                          switch (_context.prev = _context.next) {
-                            case 0:
-                              _context.next = 2;
-                              return fetch("https://api.giphy.com/v1/gifs/search?api_key=".concat(GIPHY_API_KEY, "&q=").concat(description, "&limit=1&offset=0&rating=g&lang=en"), {
-                                mode: 'cors'
-                              });
-
-                            case 2:
-                              response = _context.sent;
-                              _context.next = 5;
-                              return response.json();
-
-                            case 5:
-                              getGifData = _context.sent;
-                              weatherGif.src = getGifData.data[0].images.original.url;
-
-                            case 7:
-                            case "end":
-                              return _context.stop();
-                          }
-                        }
-                      }, _callee);
-                    }));
-                    return _gif.apply(this, arguments);
-                  };
-
-                  gif = function _gif2(_x2) {
-                    return _gif.apply(this, arguments);
-                  };
-
-                  _context2.next = 4;
-                  return fetch("https://api.openweathermap.org/data/2.5/weather?q=".concat(city, "&appid=").concat(OPEN_WEATHER_API_KEY), {
+                  _context.next = 2;
+                  return fetch("https://api.openweathermap.org/data/2.5/weather?q=".concat(city, "&appid=").concat(OPEN_WEATHER_API_KEY).concat(units), {
                     mode: 'cors'
                   });
 
-                case 4:
-                  response = _context2.sent;
-                  _context2.next = 7;
+                case 2:
+                  response = _context.sent;
+                  _context.next = 5;
                   return response.json();
 
-                case 7:
-                  getData = _context2.sent;
-                  description = getData.weather[0].description.split(' ').join('+');
-                  gif(description);
+                case 5:
+                  getData = _context.sent;
+                  console.log(getData); // let description = getData.weather[0].description.split(' ').join('+');
+                  // async function gif(description) {
+                  // 	const response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${description}&limit=1&offset=0&rating=g&lang=en`, { mode: 'cors' });
+                  // 	const getGifData = await response.json();
+                  // 	weatherGif.src = getGifData.data[0].images.original.url;
+                  // }
+                  // gif(description);
 
-                case 10:
+                case 7:
                 case "end":
-                  return _context2.stop();
+                  return _context.stop();
               }
             }
-          }, _callee2);
+          }, _callee);
         }));
         return _weather.apply(this, arguments);
       }
@@ -121,8 +100,7 @@ function getWeather() {
     if (city === '') {
       return;
     } else {
-      // getCurrentWeather.currentWeather(city);
-      console.log("getting data from weather api and giphy api works");
+      getCurrentWeather.currentWeather(city); // console.log("getting data from weather api and giphy api works");
     }
   });
 }
@@ -144,14 +122,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _public_images_wind_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../public/images/wind.svg */ "./src/public/images/wind.svg");
 /* harmony import */ var _public_images_humidity_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../public/images/humidity.svg */ "./src/public/images/humidity.svg");
 /* harmony import */ var _public_images_precipitation_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../public/images/precipitation.svg */ "./src/public/images/precipitation.svg");
-// import icon from '../public/images/cloudy.svg';
 
 
 
 
 function interfaceDOM() {
-  // const iconAttr = document.getElementById('icon');
-  // iconAttr.src = icon;
   //cache the DOM
   var locationEle = document.querySelector('[data-location]');
   var temperatureEle = document.querySelector('[data-temperature]');
@@ -165,9 +140,11 @@ function interfaceDOM() {
   var windImgEle = document.getElementById('wind');
   var humidityImgEle = document.getElementById('humidity');
   var precipitaionImgEle = document.getElementById('precipitation');
+  var celsius = document.getElementById('celsius');
+  var fahrenheit = document.getElementById('fahrenheit');
   windImgEle.src = _public_images_wind_svg__WEBPACK_IMPORTED_MODULE_0__;
   humidityImgEle.src = _public_images_humidity_svg__WEBPACK_IMPORTED_MODULE_1__;
-  precipitaionImgEle.src = _public_images_precipitation_svg__WEBPACK_IMPORTED_MODULE_2__; // const citySearchEle = document.querySelector('[data-city-search]');
+  precipitaionImgEle.src = _public_images_precipitation_svg__WEBPACK_IMPORTED_MODULE_2__;
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (interfaceDOM);
