@@ -141,7 +141,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_images_cloudy_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../public/images/cloudy.svg */ "./src/public/images/cloudy.svg");
+/* harmony import */ var _public_images_wind_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../public/images/wind.svg */ "./src/public/images/wind.svg");
+/* harmony import */ var _public_images_humidity_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../public/images/humidity.svg */ "./src/public/images/humidity.svg");
+/* harmony import */ var _public_images_precipitation_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../public/images/precipitation.svg */ "./src/public/images/precipitation.svg");
+// import icon from '../public/images/cloudy.svg';
+
+
 
 
 function interfaceDOM() {
@@ -156,7 +161,13 @@ function interfaceDOM() {
   var windEle = document.querySelector('[data-wind]');
   var humidityEle = document.querySelector('[data-humidity]');
   var citySearchForm = document.getElementById('[citySearchForm]');
-  var weatherGif = document.getElementById('weatherGif'); // const citySearchEle = document.querySelector('[data-city-search]');
+  var weatherGif = document.getElementById('weatherGif');
+  var windImgEle = document.getElementById('wind');
+  var humidityImgEle = document.getElementById('humidity');
+  var precipitaionImgEle = document.getElementById('precipitation');
+  windImgEle.src = _public_images_wind_svg__WEBPACK_IMPORTED_MODULE_0__;
+  humidityImgEle.src = _public_images_humidity_svg__WEBPACK_IMPORTED_MODULE_1__;
+  precipitaionImgEle.src = _public_images_precipitation_svg__WEBPACK_IMPORTED_MODULE_2__; // const citySearchEle = document.querySelector('[data-city-search]');
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (interfaceDOM);
@@ -744,13 +755,33 @@ module.exports = "data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%
 
 /***/ }),
 
-/***/ "./src/public/images/cloudy.svg":
-/*!**************************************!*\
-  !*** ./src/public/images/cloudy.svg ***!
-  \**************************************/
+/***/ "./src/public/images/humidity.svg":
+/*!****************************************!*\
+  !*** ./src/public/images/humidity.svg ***!
+  \****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "cloudy.svg";
+module.exports = __webpack_require__.p + "humidity.svg";
+
+/***/ }),
+
+/***/ "./src/public/images/precipitation.svg":
+/*!*********************************************!*\
+  !*** ./src/public/images/precipitation.svg ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "precipitation.svg";
+
+/***/ }),
+
+/***/ "./src/public/images/wind.svg":
+/*!************************************!*\
+  !*** ./src/public/images/wind.svg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "wind.svg";
 
 /***/ })
 
