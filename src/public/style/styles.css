@@ -54,14 +54,13 @@ section {
 	background: #232526;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
 	border-radius: 10px;
 }
 
 #weatherGif{
 	width: 100%;
   	height: auto;
+	border-radius: 10px;
 }
 
 .weather {
@@ -114,7 +113,7 @@ section {
 		margin-bottom: 1%;
 	}
 
-	/* #gifContainer {
-		
-	} */
+	#gifContainer {
+		padding: 1.5em 0.5em 1em 0.5em;
+	}
 }
