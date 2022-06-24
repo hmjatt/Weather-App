@@ -36,8 +36,8 @@ function getWeather() {
 				async function gif(description) {
 					const response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${description}&limit=1&offset=0&rating=g&lang=en`, { mode: 'cors' });
 					const getGifData = await response.json();
-					console.log(getGifData.data[0].images);
-					// weatherGif.src = getGifData.data[0].images.original.url;
+					// console.log(getGifData.data[0].images);
+					weatherGif.src = getGifData.data[0].images.original.webp;
 				}
 				gif(description);
 
