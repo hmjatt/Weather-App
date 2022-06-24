@@ -46,38 +46,69 @@ function getWeather() {
       }
 
       function _weather() {
-        _weather = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(city) {
-          var response, getData;
-          return _regeneratorRuntime().wrap(function _callee$(_context) {
+        _weather = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(city) {
+          var response, getData, description, gif, _gif;
+
+          return _regeneratorRuntime().wrap(function _callee2$(_context2) {
             while (1) {
-              switch (_context.prev = _context.next) {
+              switch (_context2.prev = _context2.next) {
                 case 0:
-                  _context.next = 2;
+                  _gif = function _gif3() {
+                    _gif = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(description) {
+                      var response, getGifData;
+                      return _regeneratorRuntime().wrap(function _callee$(_context) {
+                        while (1) {
+                          switch (_context.prev = _context.next) {
+                            case 0:
+                              _context.next = 2;
+                              return fetch("https://api.giphy.com/v1/gifs/search?api_key=".concat(GIPHY_API_KEY, "&q=").concat(description, "&limit=1&offset=0&rating=g&lang=en"), {
+                                mode: 'cors'
+                              });
+
+                            case 2:
+                              response = _context.sent;
+                              _context.next = 5;
+                              return response.json();
+
+                            case 5:
+                              getGifData = _context.sent;
+                              console.log(getGifData.data[0].images); // weatherGif.src = getGifData.data[0].images.original.url;
+
+                            case 7:
+                            case "end":
+                              return _context.stop();
+                          }
+                        }
+                      }, _callee);
+                    }));
+                    return _gif.apply(this, arguments);
+                  };
+
+                  gif = function _gif2(_x2) {
+                    return _gif.apply(this, arguments);
+                  };
+
+                  _context2.next = 4;
                   return fetch("https://api.openweathermap.org/data/2.5/weather?q=".concat(city, "&appid=").concat(OPEN_WEATHER_API_KEY).concat(units), {
                     mode: 'cors'
                   });
 
-                case 2:
-                  response = _context.sent;
-                  _context.next = 5;
+                case 4:
+                  response = _context2.sent;
+                  _context2.next = 7;
                   return response.json();
 
-                case 5:
-                  getData = _context.sent;
-                  console.log(getData); // let description = getData.weather[0].description.split(' ').join('+');
-                  // async function gif(description) {
-                  // 	const response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${description}&limit=1&offset=0&rating=g&lang=en`, { mode: 'cors' });
-                  // 	const getGifData = await response.json();
-                  // 	weatherGif.src = getGifData.data[0].images.original.url;
-                  // }
-                  // gif(description);
-
                 case 7:
+                  getData = _context2.sent;
+                  description = getData.weather[0].description.split(' ').join('+');
+                  gif(description);
+
+                case 10:
                 case "end":
-                  return _context.stop();
+                  return _context2.stop();
               }
             }
-          }, _callee);
+          }, _callee2);
         }));
         return _weather.apply(this, arguments);
       }

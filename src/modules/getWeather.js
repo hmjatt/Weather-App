@@ -31,15 +31,15 @@ function getWeather() {
 			async function weather(city) {
 				const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${OPEN_WEATHER_API_KEY}${units}`, { mode: 'cors' });
 				const getData = await response.json();
-				console.log(getData);
-				// let description = getData.weather[0].description.split(' ').join('+');
+				let description = getData.weather[0].description.split(' ').join('+');
 
-				// async function gif(description) {
-				// 	const response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${description}&limit=1&offset=0&rating=g&lang=en`, { mode: 'cors' });
-				// 	const getGifData = await response.json();
-				// 	weatherGif.src = getGifData.data[0].images.original.url;
-				// }
-				// gif(description);
+				async function gif(description) {
+					const response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${description}&limit=1&offset=0&rating=g&lang=en`, { mode: 'cors' });
+					const getGifData = await response.json();
+					console.log(getGifData.data[0].images);
+					// weatherGif.src = getGifData.data[0].images.original.url;
+				}
+				gif(description);
 
 			}
 			weather(city);
