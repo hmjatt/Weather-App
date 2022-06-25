@@ -111,6 +111,15 @@ hr {
 #citySearch {
 	margin: 1em;
 	font-family: 'Rubik', sans-serif;
+	color: var(--clr-black);
+	padding: 0.8em;
+	border-radius: 10px;
+}
+
+#citySearch:focus {
+	outline: none;
+	border: 1px solid var(--clr-primary);
+	box-shadow: 0 0 10px var(--clr-primary);
 }
 
 .temps {
