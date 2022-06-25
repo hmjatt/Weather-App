@@ -9,12 +9,6 @@ function interfaceDOM() {
 
 
 	//cache the DOM
-	// const locationEle = document.querySelector('[data-location]');
-	// const temperatureEle = document.querySelector('[data-temperature]');
-	// const statusEle = document.querySelector('[data-status]');
-	// const dateEle = document.querySelector('[data-date]');
-	// const windEle = document.querySelector('[data-wind]');
-	// const humidityEle = document.querySelector('[data-humidity]');
 	const citySearchForm = document.getElementById('[citySearchForm]');
 	const weatherGif = document.getElementById('weatherGif');
 	const windImgEle = document.getElementById('wind');
@@ -22,6 +16,7 @@ function interfaceDOM() {
 	const feelsLikeImgEle = document.getElementById('feelsLike');
 	const celsius = document.getElementById('celsius');
 	const fahrenheit = document.getElementById('fahrenheit');
+	const loaderELe = document.getElementById('loader');
 
 	windImgEle.src = wind;
 	humidityImgEle.src = humidity;

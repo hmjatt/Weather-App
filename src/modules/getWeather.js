@@ -2,6 +2,8 @@ import interfaceDOM from './interfaceDOM.js';
 const OPEN_WEATHER_API_KEY = process.env.OPEN_WEATHER_API_KEY;
 const GIPHY_API_KEY= process.env.GIPHY_API_KEY;
 
+
+//cache the DOM
 const locationEle = document.querySelector('[data-location]');
 const temperatureEle = document.querySelector('[data-temperature]');
 const statusEle = document.querySelector('[data-status]');
@@ -65,8 +67,11 @@ function getWeather() {
 					const getGifData = await response.json();
 					// console.log(getGifData);
 					weatherGif.src = getGifData.data.images.original.webp;
+					
 				}
+				
 				gif(description);
+				loader.style.display = 'none';
 
 			}
 			weather(city);
@@ -89,7 +94,7 @@ function getWeather() {
 			return;
 		} else {
 
-			
+			loader.style.display = 'flex';
 			getCurrentWeather.currentWeather(city);
 			// console.log("getting data from weather api and giphy api works");
 		}

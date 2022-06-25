@@ -84,6 +84,9 @@ Run Dev Server (Port 5500)
 8. Giphy API
 	- [Documentation](https://developers.giphy.com/docs/api#quick-start-guide)
 
+9. CSS Loader 
+	-[Loading.io](https://loading.io/css/)
+	
 ## Notes/Remarks
 
 - I have secured the API key using environment variables created using Dotenv-webpack(NPM module). This is to prevent someone from abusing the API key. This is a security feature and adds a security layer to app. But API key is still visible in the dev tools. To secure an API properly, you should use a backend like ExpressJS.
