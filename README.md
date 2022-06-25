@@ -84,8 +84,8 @@ Run Dev Server (Port 5500)
 8. Giphy API
 	- [Documentation](https://developers.giphy.com/docs/api#quick-start-guide)
 
-9. CSS Loader 
-	-[Loading.io](https://loading.io/css/)
+9. CSS Loader
+	- [Loading.io](https://loading.io/css/)
 	
 ## Notes/Remarks
 
