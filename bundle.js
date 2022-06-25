@@ -23,7 +23,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 var OPEN_WEATHER_API_KEY = "c80231576ff419a528c52d2a326a1b63";
-var GIPHY_API_KEY = "8WoOanNYllnHNjv6c48dgGJpqwGdGqCp"; //cache the DOM
+var GIPHY_API_KEY = "8WoOanNYllnHNjv6c48dgGJpqwGdGqCp"; //cache the DOM(Weather Data)
 
 var locationEle = document.querySelector('[data-location]');
 var temperatureEle = document.querySelector('[data-temperature]');
@@ -82,8 +82,9 @@ function getWeather() {
                             case 5:
                               getGifData = _context.sent;
                               weatherGif.src = getGifData.data.images.original.webp;
+                              loader.style.display = 'none';
 
-                            case 7:
+                            case 8:
                             case "end":
                               return _context.stop();
                           }
@@ -132,7 +133,6 @@ function getWeather() {
       }
 
       weather(city);
-      loader.style.display = 'none';
     };
 
     return {
