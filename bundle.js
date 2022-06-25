@@ -28,7 +28,7 @@ var locationEle = document.querySelector('[data-location]');
 var temperatureEle = document.querySelector('[data-temperature]');
 var statusEle = document.querySelector('[data-status]');
 var dateEle = document.querySelector('[data-date]');
-var precipitationEle = document.querySelector('[data-precipitation]');
+var feelsLikeEle = document.querySelector('[data-feels-like]');
 var windEle = document.querySelector('[data-wind]');
 var humidityEle = document.querySelector('[data-humidity]');
 document.addEventListener('DOMContentLoaded', _interfaceDOM_js__WEBPACK_IMPORTED_MODULE_0__["default"]);
@@ -55,49 +55,81 @@ function getWeather() {
       }
 
       function _weather() {
-        _weather = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(city) {
-          var response, getData;
-          return _regeneratorRuntime().wrap(function _callee$(_context) {
+        _weather = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(city) {
+          var response, getData, description, gif, _gif;
+
+          return _regeneratorRuntime().wrap(function _callee2$(_context2) {
             while (1) {
-              switch (_context.prev = _context.next) {
+              switch (_context2.prev = _context2.next) {
                 case 0:
-                  _context.next = 2;
+                  _gif = function _gif3() {
+                    _gif = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(description) {
+                      var response, getGifData;
+                      return _regeneratorRuntime().wrap(function _callee$(_context) {
+                        while (1) {
+                          switch (_context.prev = _context.next) {
+                            case 0:
+                              _context.next = 2;
+                              return fetch("https://api.giphy.com/v1/gifs/translate?api_key=".concat(GIPHY_API_KEY, "&s=").concat(description), {
+                                mode: 'cors'
+                              });
+
+                            case 2:
+                              response = _context.sent;
+                              _context.next = 5;
+                              return response.json();
+
+                            case 5:
+                              getGifData = _context.sent;
+                              // console.log(getGifData);
+                              weatherGif.src = getGifData.data.images.original.webp;
+
+                            case 7:
+                            case "end":
+                              return _context.stop();
+                          }
+                        }
+                      }, _callee);
+                    }));
+                    return _gif.apply(this, arguments);
+                  };
+
+                  gif = function _gif2(_x2) {
+                    return _gif.apply(this, arguments);
+                  };
+
+                  _context2.next = 4;
                   return fetch("https://api.openweathermap.org/data/2.5/weather?q=".concat(city, "&appid=").concat(OPEN_WEATHER_API_KEY).concat(units), {
                     mode: 'cors'
                   });
 
-                case 2:
-                  response = _context.sent;
-                  _context.next = 5;
+                case 4:
+                  response = _context2.sent;
+                  _context2.next = 7;
                   return response.json();
 
-                case 5:
-                  getData = _context.sent;
+                case 7:
+                  getData = _context2.sent;
                   console.log(getData, _typeof(getData.main.temp));
                   locationEle.innerText = getData.name; // let temps = getData.main.temp
 
-                  temperatureEle.innerText = Math.round(getData.main.feels_like) + tempDegree;
+                  temperatureEle.innerText = Math.round(getData.main.temp) + " " + tempDegree;
                   statusEle.innerText = getData.weather[0].description;
-                  dateEle.innerText = new Date().toDateString(); // precipitationEle.innerText = 
-
+                  dateEle.innerText = new Date().toDateString();
                   windEle.innerText = Math.round(getData.wind.speed) + " " + windSpeed;
-                  humidityEle.innerText = getData.main.humidity + "%"; //fill content with values
+                  humidityEle.innerText = getData.main.humidity + "%";
+                  feelsLikeEle.innerText = Math.round(getData.main.feels_like) + " " + tempDegree; //fill content with values
                   //call giphy api using weather
-                  // let description = getData.weather[0].description.split(' ').join('+');
-                  // async function gif(description) {
-                  // 	const response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${description}&limit=1&offset=0&rating=g&lang=en`, { mode: 'cors' });
-                  // 	const getGifData = await response.json();
-                  // 	// console.log(getGifData.data[0].images);
-                  // 	weatherGif.src = getGifData.data[0].images.original.webp;
-                  // }
-                  // gif(description);
 
-                case 13:
+                  description = getData.weather[0].description.split(' ').join('+');
+                  gif(description);
+
+                case 18:
                 case "end":
-                  return _context.stop();
+                  return _context2.stop();
               }
             }
-          }, _callee);
+          }, _callee2);
         }));
         return _weather.apply(this, arguments);
       }
