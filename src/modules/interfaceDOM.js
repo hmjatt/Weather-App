@@ -6,8 +6,6 @@ import cloudy from '../public/images/cloudy.svg';
 
 function interfaceDOM() {
 
-
-
 	//cache the DOM
 	const citySearchForm = document.getElementById('[citySearchForm]');
 	const weatherGif = document.getElementById('weatherGif');
