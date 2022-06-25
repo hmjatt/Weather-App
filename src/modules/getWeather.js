@@ -6,7 +6,7 @@ const locationEle = document.querySelector('[data-location]');
 const temperatureEle = document.querySelector('[data-temperature]');
 const statusEle = document.querySelector('[data-status]');
 const dateEle = document.querySelector('[data-date]');
-const precipitationEle = document.querySelector('[data-precipitation]');
+const feelsLikeEle = document.querySelector('[data-feels-like]');
 const windEle = document.querySelector('[data-wind]');
 const humidityEle = document.querySelector('[data-humidity]');
 
@@ -44,13 +44,12 @@ function getWeather() {
 				console.log(getData, typeof(getData.main.temp));
 				locationEle.innerText = getData.name;
 				// let temps = getData.main.temp
-				temperatureEle.innerText = Math.round(getData.main.feels_like) + tempDegree;
+				temperatureEle.innerText = Math.round(getData.main.temp) + " " + tempDegree;
 				statusEle.innerText = getData.weather[0].description;
-				dateEle.innerText = new Date().toDateString();
-				// precipitationEle.innerText = 
+				dateEle.innerText = new Date().toDateString(); 
 				windEle.innerText = Math.round(getData.wind.speed) + " " + windSpeed;
 				humidityEle.innerText = getData.main.humidity + "%";
-
+				feelsLikeEle.innerText = Math.round(getData.main.feels_like) + " " + tempDegree
 			
 
 
@@ -59,15 +58,15 @@ function getWeather() {
 
 
 				//call giphy api using weather
-				// let description = getData.weather[0].description.split(' ').join('+');
+				let description = getData.weather[0].description.split(' ').join('+');
 
-				// async function gif(description) {
-				// 	const response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${description}&limit=1&offset=0&rating=g&lang=en`, { mode: 'cors' });
-				// 	const getGifData = await response.json();
-				// 	// console.log(getGifData.data[0].images);
-				// 	weatherGif.src = getGifData.data[0].images.original.webp;
-				// }
-				// gif(description);
+				async function gif(description) {
+					const response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=${GIPHY_API_KEY}&s=${description}`, { mode: 'cors' });
+					const getGifData = await response.json();
+					// console.log(getGifData);
+					weatherGif.src = getGifData.data.images.original.webp;
+				}
+				gif(description);
 
 			}
 			weather(city);
