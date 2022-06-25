@@ -7,7 +7,7 @@
 An Application that let's you search weather for a specific location and toggles between Fahrenheit or Celsius. This project is created to practice topics like JSON, API Keys(Secrets, and Security), Async & Await in JavaScript while using Webpack as a module bundler. Feel free to reach me at [Twitter](https://twitter.com/hmjatt/)
 
 
-<!-- [Live Preview]() -->
+[Live Preview](https://hmjatt.github.io/Weather-App/)
 
 
 ### Technologies Used
