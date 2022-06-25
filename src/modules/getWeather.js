@@ -3,7 +3,7 @@ const OPEN_WEATHER_API_KEY = process.env.OPEN_WEATHER_API_KEY;
 const GIPHY_API_KEY= process.env.GIPHY_API_KEY;
 
 
-//cache the DOM
+//cache the DOM(Weather Data)
 const locationEle = document.querySelector('[data-location]');
 const temperatureEle = document.querySelector('[data-temperature]');
 const statusEle = document.querySelector('[data-status]');
@@ -56,17 +56,20 @@ function getWeather() {
 					const response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=${GIPHY_API_KEY}&s=${description}`, { mode: 'cors' });
 					const getGifData = await response.json();
 					weatherGif.src = getGifData.data.images.original.webp;
+					loader.style.display = 'none';
 				}
 				gif(description);
+				
 			}
+			
 			weather(city);
-			loader.style.display = 'none';
+			
 		};
 		
 	return {
 		currentWeather,
 	}
-	
+
 	})();
 
 	citySearchForm.addEventListener('submit', (e) => {
