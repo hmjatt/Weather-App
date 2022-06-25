@@ -88,6 +88,8 @@ Run Dev Server (Port 5500)
 
 - I have secured the API key using environment variables created using Dotenv-webpack(NPM module). This is to prevent someone from abusing the API key. This is a security feature and adds a security layer to app. But API key is still visible in the dev tools. To secure an API properly, you should use a backend like ExpressJS.
 
+- Fetched weather, specifically Wind Speed sometimes is inaccurate but it's coming from the API and is for educational/entertainment purposes only.
+
 - Async & Await is a JavaScript feature that allows us to write asynchronous code in a synchronous manner. It is used to make our code more readable and easier to understand.
 
 - I have used the Open Weather API to get the weather data. This is a free API that allows you to get the weather data for a specific location(view Documentation for details). This API has 60 requests per minute(1,000,000 requests per month) limit, view pricing information for more details.
