@@ -80,7 +80,7 @@ function getWeather() {
                   statusEle.innerText = getData.weather[0].description;
                   dateEle.innerText = new Date().toDateString(); // precipitationEle.innerText = 
 
-                  windEle.innerText = getData.wind.speed + " " + windSpeed;
+                  windEle.innerText = Math.round(getData.wind.speed) + " " + windSpeed;
                   humidityEle.innerText = getData.main.humidity + "%"; //fill content with values
                   //call giphy api using weather
                   // let description = getData.weather[0].description.split(' ').join('+');
