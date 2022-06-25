@@ -33,10 +33,14 @@ main {
 	transition: all 0.5s ease-in-out;
 }
 
-section, .general-information, .detail, form, #currentWeather {
+section, .general-information, .detail, form{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+#currentWeather {
+	width: 30vw;
 }
 
 .location, .status {
@@ -50,6 +54,7 @@ section {
 #gifContainer {
 	flex-direction: row;
 	justify-content: center;
+	/* width: 80vw; */
 	/* height: 25vh; */
 	background: #232526;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
@@ -126,6 +131,10 @@ hr {
 		margin-top: 2%;
 		padding: 1%;
 		margin-bottom: 1%;
+	}
+
+	#currentWeather {
+		width: 90vw;
 	}
 
 	#gifContainer {
