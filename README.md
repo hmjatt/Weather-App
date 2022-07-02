@@ -1,13 +1,12 @@
 # Weather-App
 
+## [Live Preview](https://hmjatt.github.io/Weather-App/)
+
 
 ![This is an image](https://github.com/hmjatt/hmjatt.github.io/blob/master/images/Weather%20App.jpg)
 
 
 An Application that let's you search weather for a specific location and toggles between Fahrenheit or Celsius. This project is created to practice topics like JSON, API Keys(Secrets, and Security), Async & Await in JavaScript while using Webpack as a module bundler. App shows a random Gif based on current weather of location, Enjoy!!! 😃 . Feel free to reach me at [Twitter](https://twitter.com/hmjatt/)
-
-
-[Live Preview](https://hmjatt.github.io/Weather-App/)
 
 
 ### Technologies Used
